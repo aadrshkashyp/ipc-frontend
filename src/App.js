@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import IPCList from './components/IPCList';
+import IPCForm from './components/IPCForm';
+import IPCSearch from './components/IPCSearch';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Indian IPC Code Manager</h1>
+      <IPCSearch />
+      <IPCForm />
+      <IPCList />
     </div>
   );
 }
